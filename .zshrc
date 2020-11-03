@@ -1,3 +1,9 @@
+# Alias
+alias gs="git status"
+alias gd="git diff"
+alias ga="git add"
+alias gl="git log"
+
 # Rust
 CARGO_BIN="$HOME/.cargo/bin"
 if [ -d "$CARGO_BIN" ]; then
