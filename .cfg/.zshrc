@@ -25,6 +25,9 @@ if [ -d "$ZSH" ]; then
   source $ZSH/oh-my-zsh.sh
 fi
 
+# cfg
+alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
 # pyenv - must be present in the end
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
