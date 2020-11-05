@@ -33,6 +33,7 @@ if [ -d "$ZSH" ]; then
     osx
     rust
     cargo
+    golang
     tmux  
   )
   source $ZSH/oh-my-zsh.sh
