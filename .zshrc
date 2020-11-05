@@ -10,6 +10,13 @@ if [ -d "$CARGO_BIN" ]; then
   export PATH="$PATH:$HOME/.cargo/bin"
 fi
 
+# Go
+GOPATH="$HOME/go"
+if [ -d "$GOPATH" ]; then
+  export GOPATH
+  export PATH="$PATH:$GOPATH/bin"
+fi
+
 # Oh My ZSH
 export ZSH_DISABLE_COMPFIX="true"
 export ZSH="$HOME/.oh-my-zsh"
