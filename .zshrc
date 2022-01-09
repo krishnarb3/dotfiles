@@ -30,17 +30,16 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 if [ -d "$ZSH" ]; then
   plugins=(
     git
-    osx
+    macos
     rust
-    cargo
     golang
     tmux  
   )
   source $ZSH/oh-my-zsh.sh
 fi
 
-# cfg
-alias cfg='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+# config for dotfiles
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # pyenv - must be present in the end
 if command -v pyenv 1>/dev/null 2>&1; then
